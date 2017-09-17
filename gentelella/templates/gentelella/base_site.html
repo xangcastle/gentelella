@@ -1,0 +1,11 @@
+{% extends "gentelella/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<a id="site-name" href="{% url 'gentelella:index' %}" class="site_title"><i class="fa fa-paw"></i> <span>{{ site_header|default:_('Django administration') }}</span></a>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block search-form %}{% endblock %}
